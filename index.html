@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Grade Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="container">
+
+    <section class="intro">
+      <p class="small-title">JavaScript Project</p>
+      <h1>Student Grade Calculator</h1>
+      <p>
+        Enter your assignment, CAT, and exam marks to calculate your final score,
+        grade, and academic remark.
+      </p>
+    </section>
+
+    <section class="calculator-card">
+
+      <div class="form-group">
+        <label for="studentName">Student Name</label>
+        <input type="text" id="studentName" placeholder="Enter student name">
+      </div>
+
+      <div class="form-group">
+        <label for="assignment">Assignment Marks</label>
+        <input type="number" id="assignment" placeholder="Enter marks out of 100" min="0" max="100">
+        <small>Weight: 30%</small>
+      </div>
+
+      <div class="form-group">
+        <label for="cat">CAT Marks</label>
+        <input type="number" id="cat" placeholder="Enter marks out of 100" min="0" max="100">
+        <small>Weight: 20%</small>
+      </div>
+
+      <div class="form-group">
+        <label for="exam">Exam Marks</label>
+        <input type="number" id="exam" placeholder="Enter marks out of 100" min="0" max="100">
+        <small>Weight: 50%</small>
+      </div>
+
+      <div class="buttons">
+        <button onclick="calculateGrade()" class="btn">Calculate Grade</button>
+        <button onclick="clearForm()" class="btn btn-secondary">Clear</button>
+      </div>
+
+      <div class="result-box" id="resultBox">
+        <h2>Result</h2>
+        <p id="resultText">Your result will appear here.</p>
+      </div>
+
+    </section>
+
+    <section class="grade-guide">
+      <h2>Grade Guide</h2>
+
+      <div class="guide-grid">
+        <div>A: 70 - 100</div>
+        <div>B: 60 - 69</div>
+        <div>C: 50 - 59</div>
+        <div>D: 40 - 49</div>
+        <div>F: 0 - 39</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Created by Sammy Muasya William</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
